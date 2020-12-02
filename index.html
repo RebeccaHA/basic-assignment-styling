@@ -18,8 +18,7 @@
     </header>
     <section id="styling">
       <div
-        class="demo"
-        :class="{active: selectedBoxA}"
+        :class="['demo',{active: selectedBoxA}]"
         @click="isSelected('A')"
       ></div>
       <div class="demo" @click="isSelected('B')"></div>
