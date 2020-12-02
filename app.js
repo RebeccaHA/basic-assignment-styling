@@ -5,6 +5,17 @@ const app = Vue.createApp({
       selectedBoxB: false,
       selectedBoxC: false
     };
+  },
+  methods: {
+    isSelected(box) {
+      if (box === "A") {
+        this.selectedBoxA = true;
+      } else if (box === "B") {
+        this.selectedBoxB = true;
+      } else if (box === "C") {
+        this.selectedBoxC = true;
+      }
+    }
   }
 });
 
